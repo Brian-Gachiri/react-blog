@@ -18,17 +18,22 @@ const Nav = () => {
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
+
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav ms-auto">
                         <li className="nav-item">
-                            <Link className="nav-link active" aria-current="page" to="/">Home</Link>
+                            <Link className="nav-link active" aria-current="page" to="/">
+                                <span className={'d-none d-lg-block'}>Home</span>
+                                <span className={'d-lg-none'}>Mobile</span>
+
+                            </Link>
                         </li>
                         <li className="nav-item">
                             <Link className="nav-link" to="/about">About</Link>
                         </li>
 
                         <li className="nav-item">
-                            <Link className="btn btn-main" to="/">Articles</Link>
+                            <Link className="btn btn-main" to="/articles">Articles</Link>
                         </li>
                     </ul>
                 </div>
